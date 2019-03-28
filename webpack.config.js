@@ -21,6 +21,9 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './src/data.json', to: './' }
     ]),
+    new CopyWebpackPlugin([
+      { from: './src/assets', to: './assets' }
+    ])
   ],
   module: {
     rules: [
