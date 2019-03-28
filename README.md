@@ -1,7 +1,7 @@
 # test-task
 ## Responsive product's table via pug+sass+webpack
 
-Link: nicklevkovich.github.io/test-task
+Link: http://nicklevkovich.github.io/test-task
 
 Functionality:
   - Responsive container for three resolutions
