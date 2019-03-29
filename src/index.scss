@@ -38,21 +38,24 @@ body {
 .container {
   @include lowRes {
     width: $lowres;
+    height: $highres * 3;
     background: $lrcolor;
   }
   @include midRes {
     width: $midres;
+    height: $midres * 2.5;
     background: $mrcolor;
   }
   @include highRes {
     width: $highres;
+    height: $lowres * 3;
     background: $hrcolor;
   }
   
   display: flexbox;
   overflow-y: visible;
   
-  height: 100vh;
+  
   margin: 0 auto;
   
   transition: 1s;
