@@ -2,7 +2,11 @@ $highres: 900px;
 $midres: 600px;
 $lowres: 300px;
 $bg-color: #222;
+$hrcolor: crimson;
+$mrcolor: sandybrown;
+$lrcolor: teal;
 $currentres: $lowres;
+$itemside: 280px;
 
 @mixin lowRes {
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -34,15 +38,15 @@ body {
 .container {
   @include lowRes {
     width: $lowres;
-    background: teal;
+    background: $lrcolor;
   }
   @include midRes {
     width: $midres;
-    background: sandybrown;
+    background: $mrcolor;
   }
   @include highRes {
     width: $highres;
-    background: crimson;
+    background: $hrcolor;
   }
   
   display: flexbox;
@@ -59,8 +63,8 @@ body {
   display: flex;
   float: left;
 
-  width: 280px;
-  height: 280px;
+  width: $itemside;
+  height: $itemside;
   margin: 10px;
 
   filter: grayscale(0.8);
@@ -80,7 +84,7 @@ body {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    
+
     transition: 0.25s;
   }
 }
