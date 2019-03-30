@@ -9,6 +9,7 @@ Functionality:
     - sandybrown: 768-1199px
     - teal: 320-767px
   - Responsive "table of products"
+  - JSON file data import
 
 Work Flow:
   --------------------------------------------------------
